@@ -44,9 +44,6 @@ spec:
       labels:
         app: flask
     spec:
-      env:
-      - name: YOUR_NAME
-        value: Matthew
       containers:
       - name: flask-container
         image: mtkg/duo-flask:latest
