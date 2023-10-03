@@ -34,7 +34,7 @@ spec:
   replicas: 5
   selector:
     matchLabels:
-      app: nginx-pod  #TESTING
+      app: nginx
   strategy:
     rollingUpdate:
       maxSurge: 20%
@@ -42,7 +42,7 @@ spec:
   template:
     metadata:
       labels:
-        app: nginx-pod  #TESTING
+        app: nginx
     spec:
       containers:
       - name: nginx-container

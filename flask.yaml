@@ -34,7 +34,7 @@ spec:
   replicas: 5
   selector:
     matchLabels:
-      app: flask-pod  #TESTING
+      app: flask
   strategy:
     rollingUpdate:
       maxSurge: 20%
@@ -42,7 +42,7 @@ spec:
   template:
     metadata:
       labels:
-        app: flask-pod  #TESTING
+        app: flask
     spec:
       containers:
       - name: flask-container
