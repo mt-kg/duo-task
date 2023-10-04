@@ -46,6 +46,7 @@ spec:
     spec:
       containers:
       - name: nginx-container
-        image: mtkg/duo-nginx:latest
+        image: mtkg/duo-nginx:v1
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
