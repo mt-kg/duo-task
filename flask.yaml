@@ -46,7 +46,7 @@ spec:
     spec:
       containers:
       - name: flask-container
-        image: mtkg/duo-flask:v1
+        image: mtkg/duo-flask:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 5500
