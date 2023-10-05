@@ -17,6 +17,13 @@ pipeline{
                     '''
                 }
             }
+            stage('Cleanup') {
+                steps {
+                    sh '''
+                    docker rmi mtkg/duo-nginx:latest
+                    '''
+                }
+            }
             stage('Run a rollout restart'){
                 steps{
                     sh '''
